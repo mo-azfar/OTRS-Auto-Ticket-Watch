@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Config">
+	<Setting Name="Ticket::EventModulePost###8710-TicketAutoWatch" Required="0" Valid="0">
+        <Description Translatable="1">Add or remove current agent to or from the ticket watchlist upon specific event below.</Description>
+        <Navigation>Core::Event::Ticket</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::TicketAutoWatch</Item>
+                <Item Key="Event">TicketOwnerUpdate|TicketResponsibleUpdate</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
